@@ -1,0 +1,156 @@
+/* colors */
+
+$white: #FFFFFF;
+$watermelon: #FD4A6B;
+$gray-light:  #717171;
+$yellow-khaki: #F5A623;
+$red-scarlet :#8C1E34;
+
+$brand-pink: #FFC4C5;
+$brand-warning: #F5A623;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+$body-bg:               #FBFBFB !default;
+$text-color:            $gray-light !default;
+
+$border-radius-small: 2px !default;
+$border-radius-base:  5px !default;
+$border-radius-xlarge: 30px !default;
+
+$letter-spacing-base: 3px;
+
+//== path
+//
+//##
+
+$image-path: "../../src/images";
+
+// $container-fixed-width: 970px !important;
+
+//** Global textual link color.
+$link-color:   #333333;
+
+/* input */
+
+$input-border-focus: #000000 !default;
+
+/* size */
+
+$border-radius-xlarge: 16px !default;
+
+$font-size-42: 40px;
+
+/* nav */
+
+$nav-pills-menu-width: 170px;
+$nav-menu-banner-height: 450px;
+
+$nav-side-header-color: #333333;
+
+/* dropdown */
+
+$dropdown-menu-font-size: 18px;
+$dropdown-menu-bg-width: 180px;
+$dropdown-submenu-bg-width: 600px;
+$dropdown-menu-corlor: #ff4465;
+$dropdown-bg-corlor: #FAF9F7;
+$dropdown-list-title: #838383;
+$dropdown-list-con: #838383;
+$dropdown-submenu-list-padding: 10px;
+
+
+/* article */
+
+$article-letter-spacing: 3px;
+$line-height: 30px;
+
+/* footer */
+
+$footer-bottom-color: #5b5b5b;
+$footer-top-title: #1f1f1f;
+$footer-top-con: #8f8f8f;
+$footer-bottom-height: 140px;
+
+/* border */
+
+// $border-radius-base: 0;
+
+/* product */
+
+$product-yellow-color: #F5A623;
+$product-gray-color: #666666;
+$product-filter-border-color: #CEC6C6;
+
+$product-font-size: 16px;
+$product-amount-font-size: 28px;
+
+$product-media-reply-bg: #FFDEDE;
+
+/* tags */
+
+$product-today-tag-color: #FFC361;
+
+/* pager */
+
+$pager-filter-font-color: #707076;
+$pager-product-font-color: #AEAEAE;
+
+/* breadcrumb */
+
+$breadcrumb-separator-right: ">" !default;
+$breadcrumb-color: #333333;
+$breadcrumb-active-color: #333333;
+
+// Panels
+$panel-border-radius:         0;
+
+$panel-tabs-border: $white;
+$panel-tabs-text-color: $white;
+$panel-tabs-bg-color: #CD5068;
+$panel-tabs-border: $white;
+
+$panel-white-heading-bg: $white;
+// $panel-gray-light-text:          $gray-dark !default;
+// $panel-gray-light-border:        #ddd !default;
+// $panel-gray-light-heading-bg:    #F3F3F3 !default;
+
+/* Buttons */
+$btn-default-color:              #BABABA !default;
+$btn-default-bg:                 $white !default;
+$btn-default-border:             #BDBDBD !default;
+
+$btn-yellow-color:              $white !default;
+$btn-yellow-bg:                 #F5A623 !default;
+$btn-yellow-border:             #F5A623 !default;
+
+$btn-oval-pink: #FFE4E4;
+
+/* table */
+
+$table-bg-hover: #FFF5F6;
+
+/* title */
+$subtitle-color: #8E8E8E;
+
+/* alert */
+
+$alert-border-radius: 0;
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text: #B8E986;
+$state-warning-text: #FFC057;
+
+/* modal */
+
+$modal-bg-verify-code: #4A90E2;
+
+/* progress */
+
+$progress-bar-watermelon-bg: $watermelon;
+

@@ -1,0 +1,21 @@
+// == feature
+// -------------------------
+//
+
+.feature-item {
+    margin-top: 50px;
+    padding: 20px 0;
+    background: $white;
+    dl {
+        padding: $padding-large-vertical;
+    }
+    dt {
+        padding: $padding-large-vertical;
+    	width: 100px;
+    }
+    dd {
+    	margin-left: 100px;
+    	text-align: left;
+    	width: 140px;
+    }
+}

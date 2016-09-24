@@ -1,0 +1,52 @@
+// alert
+// -------------------------
+//
+//
+// Alerts
+// --------------------------------------------------
+// Base styles
+// -------------------------
+$primary: #446CB3;
+$secondary: #ADB2BD;
+$info: #89c4f4;
+$alert: #F22613;
+$success: #87D37C;
+$warning: #F89406;
+.alert-box {
+    padding: 15px;
+    border-width: 1px 1px 1px 5px;
+    border-color: lighten($gray-base, 80%);
+    i {
+        font-size: 50px;
+    }
+    strong {
+    	font-size: 20px;
+    }
+    .alert-list-border {
+    	border-left: 1px solid $gray-light;
+    	padding-left: 20px;
+    }
+    &.radius {
+        border-radius: $border-radius-base;
+    }
+    &.info {
+        border-left-color: $primary;
+        i {
+            color: $primary;
+        }
+    }
+    &.warning {
+        border-left-color: $warning;
+        i {
+            color: $warning;
+        }
+    }
+}
+
+// .alert-danger {
+//   @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+// }
+.alert-black {
+    @include alert-variant($gray-base, $gray-base, $white);
+    @include opacity(0.7);
+}

@@ -1,0 +1,44 @@
+//== footer
+//----------------------------------
+//
+
+footer {
+    position: absolute;
+    width: 100%;
+    hr {
+        margin: 0;
+        width: 95%;
+    }
+}
+
+.footer-top-area {
+    padding: 20px 0;
+    background: $white;
+    .col-xs-1 {
+        width: 17%;
+        padding-top: 22px;
+    }
+    .col-xs-2 {
+        width: 13%;
+    }
+    .footer-menu {
+        > h2 {
+            color: $footer-top-title;
+        }
+        .list-unstyled li,
+        a {
+            color: $footer-top-con;
+            padding: 5px 0;
+        }
+    }
+}
+
+.footer-bottom-area {
+    padding: 35px;
+    height: $footer-bottom-height;
+    background: $footer-bottom-color;
+    color: $white;
+    a {
+        color: $white;
+    }
+}

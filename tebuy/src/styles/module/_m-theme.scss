@@ -1,0 +1,11 @@
+//
+// theme
+// --------------------------------------------------
+
+
+// Mixin for generating new styles
+@mixin progress-bar-styles($color) {
+  @include gradient-vertical($start-color: $color, $end-color: darken($color, 10%));
+}
+
+.progress-bar-watermelon     { @include progress-bar-styles($progress-bar-watermelon-bg); }

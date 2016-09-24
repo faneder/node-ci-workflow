@@ -1,0 +1,38 @@
+// == pagination
+// -------------------------
+//
+
+.pager-flter > .pager {
+    margin: 0;
+    li > a,
+    li > span {
+        border: none;
+        background: none;
+        padding: 5px;
+        color: $pager-filter-font-color;
+    }
+    .now-page span {
+        color: $watermelon;
+    }
+    .disabled > a {
+        background: none;
+    }
+}
+
+.pager-product > .pagination {
+    color: $pager-product-font-color;
+    > li {
+        a,
+        input,
+        button {
+            margin-right: 5px;
+            border-radius: $border-radius-small;
+            color: $pager-product-font-color;
+        }
+    }
+    .active a {
+        background: none;
+        color: $watermelon;
+        border: none
+    }
+}

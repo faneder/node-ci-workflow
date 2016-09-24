@@ -1,0 +1,38 @@
+// == buttons
+// -------------------------
+//
+
+/*
+ *-----------------------
+ * button shape
+ *-----------------------
+ */
+
+.upload-group {
+    > li {
+        padding: 0;
+        position: relative;
+    }
+}
+
+.upload-list {
+    @include size(120px, 120px);
+    margin-left: 10px;
+    overflow: hidden;
+    text-align: center;
+    .close {
+        position: absolute;
+        right: 0;
+    }
+    .middle {
+        position: relative;
+        top: 20%;
+    }
+    &.empty {
+        .glyphicon {
+            font-size: 50px;
+        }
+        border: 1px dashed;
+    }
+}
+

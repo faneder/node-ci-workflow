@@ -1,0 +1,32 @@
+// == panel
+// -------------------------
+//
+.panel-tabs {
+    @include panel-variant($panel-tabs-border, $panel-tabs-text-color, $panel-tabs-bg-color, $panel-tabs-border);
+    > .panel-heading {
+        margin-bottom: 60px;
+        padding: 0;
+        li {
+            border-right: 1px solid #ddd;
+            > a {
+                border-radius: 0;
+                background: none;
+                border: none;
+                color: $white;
+            }
+            &.active > a {
+                border-width: 0 0 4px;
+                border-color: #FFC8C8;
+            }
+        }
+    }
+}
+
+// Contextual variations
+.panel-white {
+    @include panel-variant($panel-default-border, $panel-default-text, $white, $panel-default-border);
+    > .l-main-title-line {
+        border-width: 5px;
+        border-color: #000;
+    }
+}

@@ -1,0 +1,28 @@
+// Typography
+
+// [converter] $parent hack
+@mixin text-emphasis-variant($parent, $color) {
+  #{$parent} {
+    color: $color;
+  }
+  a#{$parent}:hover,
+  a#{$parent}:focus {
+    color: darken($color, 10%);
+  }
+}
+
+@mixin text-link($link, $hover, $active) {
+  a {
+    color: $link;
+    text-decoration: none;
+    //&:visited {
+      //color: $visit;
+    //}
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}

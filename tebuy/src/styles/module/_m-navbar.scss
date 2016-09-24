@@ -1,0 +1,271 @@
+// Tabs
+// -------------------------
+// Give the tabs something to sit on
+.nav-warp {
+    margin-bottom: 20px;
+}
+
+.nav-menu {
+    // padding-left: 143px;
+    > li {
+        float: left;
+        padding-right: 10px;
+        // width: $nav-pills-menu-width;
+        // Links rendered as pills
+        > a {
+            border-radius: 0;
+            @include button-size(8px, 20px, 20px, '', 0);
+        }
+        + li {
+            margin-left: 2px;
+        }
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $white;
+                background-color: $watermelon;
+            }
+        }
+    }
+}
+
+.nav-menu-underline {
+    border-bottom: 3px solid $watermelon;
+}
+
+.nav-menu-tabs {
+    > li {
+        float: left;
+        // Make the list-items overlay the bottom border
+        margin-bottom: -1px;
+        border-right: 1px solid $nav-tabs-border-color;
+        // Actual tabs (as links)
+        > a {
+            color: $red-scarlet;
+            margin-right: 2px;
+            line-height: $line-height-base;
+            border-radius: $border-radius-base $border-radius-base 0 0;
+            &:hover {
+                border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+            }
+        }
+        // Active state, and its :hover to override normal :hover
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                // color: #8C1E34;
+                color: $gray;
+                cursor: default;
+            }
+        }
+    }
+    // pulling this in mainly for less shorthand
+    &.nav-justified {
+        @extend .nav-justified;
+        @extend .nav-tabs-justified;
+    }
+}
+
+// menu bannner & barnd bar
+.nav-menu-banner-wrap {
+    @include box-shadow(0 1px 2px 0 $gray-light);
+    position: relative;
+    margin-bottom: 20px;
+    height: $nav-menu-banner-height;
+    letter-spacing: 1px;
+    line-height: 2em;
+    font-size: 18px;
+    .nav-menu-banner {
+        overflow: hidden;
+        height: $nav-menu-banner-height;
+    }
+    .brand-logo {
+        @extend .text-shadow-default;
+        display: block;
+        overflow: hidden;
+        bottom: 10px;
+        margin-left: 20px;
+        letter-spacing: $letter-spacing-base;
+    }
+    .brand-bar {
+        .brand-title {
+            @extend .text-shadow-default;
+            margin: -60px 210px;
+        }
+        > img {
+            width: 15%;
+        }
+        > .pull-right {
+            @extend .text-shadow-default;
+            right: 0;
+            margin: -150px 20px;
+            .product-ratings strong {
+                color: $white;
+            }
+        }
+        .nav {
+            margin-left: 200px;
+        }
+    }
+}
+
+
+/*
+ *-----------------------
+ * filter product
+ *-----------------------
+ */
+
+.product-filter {
+    background: #F5F5F5;
+    border: 1px solid $product-filter-border-color;
+    .form-inline {
+        padding: 0 20px;
+    }
+    .nav-pills {
+        > li {
+            margin: -1px;
+            line-height: 33px;
+            height: 45px;
+            min-width: 85px;
+            border-right: 1px solid $product-filter-border-color;
+            > a {
+                padding: 5px;
+                background: none;
+            }
+            > input {
+                margin: 5px 10px;
+            }
+            .glyphicon {
+                top: 2px;
+            }
+            .active {
+                color: $watermelon;
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}
+
+
+/*
+ *-----------------------
+ * side-nav
+ *-----------------------
+ * ## Horizontal
+ */
+
+.side-nav {
+    background: $white;
+    .side-nav-header {
+        text-align: center;
+        background: $nav-side-header-color;
+        > a {
+            color: $white;
+        }
+    }
+    .side-nav-item {
+        &:last-child {
+            a {
+                border: none;
+            }
+        }
+        > a {
+            margin: 0 10px;
+            font-size: 14px;
+            border-bottom: 1px solid $gray-lighter;
+            &:hover {
+                background: none;
+            }
+            .side-nav-sub-item {
+                margin-bottom: 10px;
+                > li {
+                    margin-bottom: 10px;
+                    &:hover,
+                    &.active {
+                        font-weight: bold;
+                        color: $watermelon;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*
+ *-----------------------
+ * nav underline
+ *-----------------------
+ * ## if hover will chage the line color
+ */
+
+.nav-underline {
+    border-width: 3px;
+    > li:not(:last-child) {
+        &:hover, &.active {
+            &:after {
+                position: absolute;
+                bottom: -3px;
+                content: "";
+                border-bottom: 3px solid $watermelon;
+                width: 100%;
+            }
+            > a {
+                text-align: center;
+                border: none;
+                color: $watermelon;
+            }
+        }
+    }
+    .pull-right {
+        position: relative;
+        right: 0;
+        bottom: -10px;
+    }
+}
+
+.nav-shopping-cart {
+    margin-right: 5px;
+}
+
+/*
+ *-----------------------
+ * icon bar
+ *-----------------------
+ * ## Horizontal
+ */
+
+.icon-bar {
+    height: 100%;
+    width: 80px;
+    text-align: center;
+    background: $white;
+    border: 1px solid $watermelon;
+    // .active {
+        // background-color: #4CAF50;
+    // }
+}
+
+.icon-bar a {
+    padding: 10px 0;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid $watermelon;
+    color: $gray-light;
+    img {
+        margin-bottom: 10px;
+    }
+    .fa {
+        font-size: 20px;
+    }
+}
+
+// .icon-bar a:hover {
+//     background-color: #000;
+// }

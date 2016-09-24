@@ -1,0 +1,48 @@
+// == box
+// -------------------------
+//
+
+.box {
+
+}
+
+.box-head  {
+
+}
+
+.box-title {
+
+}
+
+.box-body  {
+
+}
+
+.box-foot  {
+
+}
+
+
+//== news activity
+//
+//##
+.news-activity {
+    > .row {
+        margin-top: 10px;
+    }
+}
+
+.box-news-activity {
+    @extend .text-shadow-default;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+    > h2 > span {
+        color: $yellow-khaki;
+    }
+    .disabled {
+        @extend .btn-white-rs;
+        opacity: 1;
+        border-width: 2px;
+    }
+}

@@ -1,0 +1,20 @@
+//--------------------------------------------------
+// Shape
+//--------------------------------------------------
+// triangle
+@mixin triangle-top($size, $color, $position) {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+    position: $position;
+    content: '';
+}
+
+// circle
+@mixin circle($width, $color) {
+    @include size($width, $width);
+    // background: $color;
+    -webkit-border-radius: $width/2;
+    -moz-border-radius: $width/2;
+    border-radius: $width/2;
+}

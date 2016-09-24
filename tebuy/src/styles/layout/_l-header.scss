@@ -1,0 +1,28 @@
+// == header
+// ----------------------------------
+//
+.page-header {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    // background: $white;
+}
+
+.navbar-brand {
+    font-size: $font-size-base;
+}
+
+.page-header > .container {
+    padding: 15px 0;
+}
+
+.page-header-logo {
+    width: 280px;
+}
+
+.page-header-logo-2 {
+    width: 20%;
+}
+
+.page-header-logo-title {
+    font-size: $font-size-large;
+}

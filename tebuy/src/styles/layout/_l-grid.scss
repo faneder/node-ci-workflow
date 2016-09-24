@@ -1,0 +1,19 @@
+// == grid
+// ----------------------------------
+//
+.container {
+    @include container-fixed;
+    width: 1170px;
+}
+
+.row {
+    @include make-row(0);
+}
+
+.column.col-xs-8 {
+	width: 12.5%;
+}
+
+.col-xs-15 {
+    width: 20%;
+}

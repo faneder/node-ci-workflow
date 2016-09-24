@@ -1,0 +1,64 @@
+/*--------------------
+/ @mixin pie-chart
+/-------------------*/
+
+@mixin progress-pie-chart($size, $wrap-bg-color, $inner-bg-color, $bar-color) {
+    %progress-pie-chart-defult {
+        @include size($size, $size);
+        border-radius: 50%;
+    }
+    @include size($size, $size);
+    border-radius: 50%;
+    position: relative;
+    font-size: $product-font-size;
+    background-color: $wrap-bg-color;
+    .ppc-progress {
+        @extend %progress-pie-chart-defult;
+        content: "";
+        position: absolute;
+        left: calc(50% - 100px);
+        top: calc(50% - 100px);
+        clip: rect(0, $size, $size, ( $size / 2));
+    }
+    // progress bar
+    .ppc-progress .ppc-progress-fill {
+        @extend %progress-pie-chart-defult;
+        content: "";
+        position: absolute;
+        left: calc(50% - 100px);
+        top: calc(50% - 100px);
+        transform: rotate(60deg);
+        clip: rect(0, 100px, $size, 0);
+        background: $bar-color;
+    }
+    .gt-50 {
+        background-color: $bar-color;
+    }
+    .gt-50 .ppc-progress {
+        clip: rect(0, 100px, $size, 0);
+    }
+    .gt-50 .ppc-progress .ppc-progress-fill {
+        clip: rect(0, $size, $size, 100px);
+        background: #E5E5E5;
+    }
+    // fill the inner container
+    .ppc-percents {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        left: calc(50% - 173.91304px/2);
+        top: calc(50% - 173.91304px/2);
+        width: 173.91304px;
+        height: 173.91304px;
+        background: $white;
+        text-align: center;
+        display: table;
+    }
+    .ppc-percents .percent-amount {
+        font-size: 40px;
+    }
+    .pcc-percents-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

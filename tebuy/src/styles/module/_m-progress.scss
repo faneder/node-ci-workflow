@@ -1,0 +1,90 @@
+// == progress
+// -------------------------
+//
+.progress-title {
+    padding-right: 10px;
+}
+
+.progress-bar-text {
+    position: absolute;
+    right: -70px;
+}
+
+.progress-level {
+    margin-left: 10px;
+
+}
+
+/*
+ *-----------------------
+ * step by step
+ *-----------------------
+ */
+
+.progress-step {
+    text-align: center;
+    %progress-step-defult {
+        position: relative;
+        display: inline-block;
+        background: lighten($gray-base, 80%);
+    }
+    .progress-box {
+        display: inline-block;
+        min-width: 84px;
+    }
+    .circle {
+        @extend %progress-step-defult;
+        @include size(20px, 20px);
+        z-index: 99;
+        border-radius: 40px;
+        .label {
+            @include size(12px, 14px);
+            display: inline-block;
+            line-height: 32px;
+            border-radius: 32px;
+            margin-top: 3px;
+            background: $white;
+        }
+    }
+    .bar {
+        @extend %progress-step-defult;
+        @include size(130px, 6px);
+        z-index: 0;
+        top: -22px;
+        margin-left: -37px;
+        margin-right: -38px;
+        border-radius: 0;
+        width: 200px;
+        height: 6px;
+    }
+    /* Done  */
+    .bar.done,
+    .circle.done {
+        background: $watermelon;
+    }
+    .title.done {
+        color: $watermelon;
+    }
+}
+
+
+/*
+ *-----------------------
+ * step flow arrow
+ *-----------------------
+ */
+
+.step-flow-item {
+    padding: 2px;
+}
+
+
+/*
+ *-----------------------
+ * Pie Chart
+ *-----------------------
+ */
+
+.progress-pie-chart {
+    @include progress-pie-chart(200px, #DCDCDC, $white, $watermelon);
+}

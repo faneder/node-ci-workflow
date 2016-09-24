@@ -1,0 +1,24 @@
+// == form
+// -------------------------
+//
+
+label {
+	margin-bottom: 0;
+}
+
+// Text input groups
+// -------------------------
+
+.input-group-addon {
+    background: $white;
+}
+
+.input-quantity-wrap {
+	width: 150px;
+    button {
+        padding-bottom: 7px;
+    }
+    .form-control {
+        width: 50px;
+    }
+}

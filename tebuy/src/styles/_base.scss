@@ -1,0 +1,134 @@
+// == base
+// -------------------------
+//
+
+// column same height
+// .row {
+//     display: table;
+// }
+// .row [class*="col-"] {
+//     float: none;
+//     display: table-cell;
+//     vertical-align: top;
+// }
+
+/*
+ *-----------------------
+ * input
+ *-----------------------
+ */
+
+
+/*
+ *-----------------------
+ * glyphicon
+ *-----------------------
+ */
+
+.glyphicon {
+    top: 2px;
+}
+
+/*
+ *-----------------------
+ * border
+ *-----------------------
+ */
+
+%border-radius-none {
+    border-radius: 0;
+}
+
+.no-border {
+    border: 0;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #eee;
+}
+
+.border-right {
+    border-right: 1px solid;
+}
+
+.border-3 {
+    border: 3px solid;
+}
+
+.line-vertical-left {
+   border-left: 5px solid #fb5071;
+   padding: 0 10px;
+}
+
+.line-middle {
+    line-height: 0.3;
+    text-align: center;
+    border-bottom: 1px solid $gray-darker;
+    > .line-middle-text {
+        display: inline-block;
+        position: absolute;
+        font-size: 26px;
+        background: $white;
+        padding: 0px 15px;
+        margin-left: -110px;
+    }
+    &:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+    &:before,
+    &:after {
+        content: "";
+        margin-left: 15px;
+        position: absolute;
+        border-color: #8e8e8e;
+    }
+}
+
+/*
+ *-----------------------
+ * block
+ *-----------------------
+ */
+
+.block-contain {
+    border-radius: 5px;
+    background: $white;
+    margin-bottom: 20px;
+}
+
+/*
+ *-----------------------
+ * title
+ *-----------------------
+ */
+
+.subtitle {
+    margin: 40px 0;
+    color: $subtitle-color;
+}
+
+/*
+ *-----------------------
+ * share
+ *-----------------------
+ */
+
+.share {
+    margin: 20px 0;
+    > a {
+        padding-left: 10px;
+    }
+}
+
+/*
+ *-----------------------
+ * box
+ *-----------------------
+ */
+
+.box-border {
+    border: 1px solid $watermelon;
+}
+
+

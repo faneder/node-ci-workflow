@@ -1,0 +1,85 @@
+// == coupon
+// -------------------------
+//
+
+// nav tab
+.coupon-nav-tabs {
+    background: $gray-lighter;
+    > li.active > a {
+        border-radius: 0;
+        color: $red-scarlet;
+    }
+}
+
+// coupon list
+.coupon-list {
+    .coupon-limite-date {
+        color: $gray-darker;
+    }
+    .img-wave-gray {
+        .coupon-limite-date {
+            color: $yellow-khaki;
+        }
+    }
+    .coupon-list-contain {
+        @include vertical-align();
+        color: $white;
+        .right {
+            border-left: 1px dotted;
+        }
+        .coupon-amount-wrap {
+            .coupon-text {
+                writing-mode: vertical-lr;
+                font-size: 20px;
+            }
+            .coupon-amount {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+
+// background image
+.img-wave-coupon {
+    margin: -2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+}
+
+.img-wave-coupon-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 142px;
+    .coupon-amount {
+        line-height: 125px;
+        font-size: 60px;
+    }
+    .coupon-amount-wrap {
+        height: 40px;
+        margin-bottom: 10px;
+        border-bottom: 1px dotted;
+    }
+    .border-right {
+        height: 110px;
+        border-right: 1px dotted;
+    }
+}
+
+.img-wave-gray {
+    background-image: url('#{$image-path}/combinations/coupon-bg-01.jpg');
+}
+
+.img-wave-pink {
+    background-image: url('#{$image-path}/combinations/coupon-bg-02.jpg');
+}
+
+.img-wave-blue {
+    background-image: url('#{$image-path}/combinations/coupon-bg-03.jpg');
+}
+
+.img-wave-pink-1 {
+    background-image: url('#{$image-path}/combinations/coupon-bg-04.png');
+}
+

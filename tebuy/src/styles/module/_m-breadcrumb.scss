@@ -1,0 +1,23 @@
+// == breadcrumb
+// -------------------------
+//
+
+.breadcrumb {
+    @extend %border-radius-none;
+    margin: 10px 0;
+    background-color: transparent;
+    > li {
+        + li:before {
+            content: $breadcrumb-separator-right;
+        }
+    }
+    a {
+        color: $breadcrumb-color;
+    }
+}
+
+.breadcrumb-white {
+    a, li, li+ li:before, .active {
+        color: $white;
+    }
+}

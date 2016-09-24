@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>台汇淘台湾商品跨境直购 最流行的台湾商品限时特卖</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="台汇淘">
+    <meta name="copyright" CONTENT="本網頁著作權台貿全球所有">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../dist/styles/main.css">
+    <!-- lib -->
+    <!-- <link rel="stylesheet" href="../dist/styles/vendors.css"> -->
+    <!-- endinject -->
+</head>
+
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">欢迎来到台会淘！</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">请登入</a></li>
+                        <li><a href="#about">免费注册</a></li>
+                        <li>
+                            <a href="#contact"></a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的台汇淘<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../navbar/">我的购物车 <span class="text-danger">0</span></a></li>
+                        <li><a href="../navbar-static-top/">帮助中心</a></li>
+                        <li><a href="./">消息<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="./">手机版<span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+    <div class="clearfix"></div>
+    <!-- page header -->
+    <div class="page-header shop-cart-header">
+        <div class="container">
+            <div class="col-xs-6">
+                <img class="page-header-logo" src="images/logo/tebuy_logo_01.png">
+                <span class="page-header-logo-title padding-10">購物車</span>
+            </div>
+            <div class="col-xs-6">
+                <!-- shoping step by step -->
+                <div class="progress-step">
+                    <div class="progress-box">
+                        <div class="circle done">
+                            <div class="label"></div>
+                        </div>
+                        <div class="title done">購物車</div>
+                    </div>
+                    <span class="bar done"></span>
+                    <div class="progress-box">
+                        <div class="circle done">
+                            <div class="label"></div>
+                        </div>
+                        <div class="title done">提交訂單</div>
+                    </div>
+                    <span class="bar"></span>
+                    <div class="progress-box">
+                        <div class="circle">
+                            <div class="label"></div>
+                        </div>
+                        <div class="title">選擇支付方式</div>
+                    </div>
+                </div>
+                <!-- /shoping step by step -->
+            </div>
+        </div>
+        <!-- <h1>Sticky footer with fixed navbar</h1> -->
+    </div>
+    <!-- /page header -->
+    <div class="container">
+        <table class="table table-hover cart-box">
+            <thead class="table-bordered block-contain">
+                <tr>
+                    <th>
+                        <label>
+                            <input type="checkbox"> 全選
+                        </label>
+                    </th>
+                    <th>商品信息</th>
+                    <th>單價（元）</th>
+                    <th>數量</th>
+                    <th>金額（元）</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody class="table-bordered block-contain">
+                <tr>
+                    <th scope="row">
+                        <input type="checkbox">
+                    </th>
+                    <td>
+                        <div>
+                            <div class="col-xs-3">
+                                <div class="thumbnail">
+                                    <a href="">
+                                        <img class="img-responsive" alt="Responsive image" src="images/upload/shop-cart-01.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <h4>大同電鍋10人份（淡藍色）</h4>
+                                <p class="text-watermelon">此商品符合第二件折10元活動</p>
+                                <p>適用稅率：11% <span class="text-watermelon">税费：￥4.29</span></p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <s>100</s>
+                        <h4 class="text-watermelon">85.0</h4>
+                    </td>
+                    <td>
+                        <div class="input-group input-quantity-wrap">
+                            <div class="input-group-btn">
+                                <!-- Buttons -->
+                                <button class="btn btn-default" name="">
+                                    <i class="glyphicon glyphicon-minus"></i>
+                                </button>
+                            </div>
+                            <input type="text" class="form-control" size="2" maxlength="2" value="1">
+                            <button class="btn btn-default" name=""><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                    </td>
+                    <td>170</td>
+                    <td><a>移入收藏</a>
+                        <a>刪除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <input type="checkbox">
+                    </th>
+                    <td>
+                        <div>
+                            <div class="col-xs-3">
+                                <div class="thumbnail">
+                                    <a href="">
+                                        <img class="img-responsive" alt="Responsive image" src="images/upload/shop-cart-01.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <h4>大同電鍋10人份（淡藍色）</h4>
+                                <p class="text-watermelon">此商品符合第二件折10元活動</p>
+                                <p>適用稅率：11% <span class="text-watermelon">税费：￥4.29</span></p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <s>100</s>
+                        <h4 class="text-watermelon">85.0</h4>
+                    </td>
+                    <td>
+                        <div class="input-group input-quantity-wrap">
+                            <div class="input-group-btn">
+                                <!-- Buttons -->
+                                <button class="btn btn-default" name="">
+                                    <i class="glyphicon glyphicon-minus"></i>
+                                </button>
+                            </div>
+                            <input type="text" class="form-control" size="2" maxlength="2" value="1">
+                            <button class="btn btn-default" name=""><i class="glyphicon glyphicon-plus"></i></button>
+                        </div>
+                    </td>
+                    <td>170</td>
+                    <td><a>移入收藏</a>
+                        <a>刪除</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot class="cart-list table-bordered block-contain">
+                <tr>
+                    <td>icon</td>
+                    <td colspan="5">
+                        普通快遞 <span class="text-watermelon"> 0.00元</span>實付金額滿99元包郵
+                        <span class="pull-right">
+                            <span class="text-primary padding-10">
+                                使用使用優惠券<span class="caret"></span>
+                        </span>
+                        <span class="padding-10">
+                                活動優惠：<span class="text-watermelon"> -￥10.0</span>
+                        </span>
+                        <span class="padding-10">
+                                商品应付总计: <span class="text-watermelon">￥160.00</span>
+                        </span>
+                        <span class="padding-10">
+                                税费：<span class="text-watermelon">￥4.29</span>
+                        </span>
+                        </span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <nav class="block-contain">
+            <div class="row cart-checkout-box">
+                <div class="col-xs-3 cart-checkout-item">
+                    <span class="padding-10">
+                        <label>
+                            <input type="checkbox"> 全選
+                        </label>
+                        刪除選中商品
+                    </span>
+                </div>
+                <div class="col-xs-9 cart-checkout-item text-right no-padding">
+                    <span class="text-primary">繼續選購</span> 總金額(含關稅，不含運費):
+                    <span class="product-amount">￥164.29</span>
+                    <button type="button" class="btn btn-pink-fill btn-lg">去結算</button>
+                    <!-- if submit change button  -->
+                    <!-- <button type="button" class="btn btn-pink-fill btn-lg" disabled>提交中</button> -->
+                </div>
+            </div>
+        </nav>
+        <div class="line-vertical-left">
+            <h4>猜你喜歡 <small>根據你最近瀏覽推薦</small></h4>
+        </div>
+        <div class="carousel">
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <button class="btn btn-carousel-left" name="">
+                    <i class="glyphicon glyphicon-chevron-left"></i>
+                </button>
+                <!-- <span class="carousel-control-left"><i class="glyphicon glyphicon-chevron-right"></i></span> -->
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <button class="btn btn-carousel-right" name="">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                </button>
+                <!-- <span class="carousel-control-right"><i class="glyphicon glyphicon-chevron-left"></i></span> -->
+            </a>
+            <div class="carousel-inner carousel-shopping-cart">
+                <div class="row">
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- control button -->
+                <div class="carousel-indicators-inner">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                        <button class="btn btn-default btn-sm" name="">換一組</button>
+                    </ol>
+                </div>
+                <!-- /control button -->
+            </div>
+        </div>
+        <div class="line-vertical-left subtitle-2">
+            <h4>熱銷商品
+               <small>
+                    <span class="list-item list-item-border">面膜</span>
+                    <span class="list-item list-item-border active">面膜</span>
+                    <span class="list-item list-item-border">面膜</span>
+                    <span class="list-item list-item-border">面膜</span>
+                </small>
+            </h4>
+        </div>
+        <div class="carousel">
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <button class="btn btn-carousel-left" name="">
+                    <i class="glyphicon glyphicon-chevron-left"></i>
+                </button>
+                <!-- <span class="carousel-control-left"><i class="glyphicon glyphicon-chevron-right"></i></span> -->
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <button class="btn btn-carousel-right" name="">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                </button>
+                <!-- <span class="carousel-control-right"><i class="glyphicon glyphicon-chevron-left"></i></span> -->
+            </a>
+            <div class="carousel-inner carousel-shopping-cart">
+                <div class="row">
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-15">
+                        <div class="carousel-box">
+                            <div class="thumbnail product-item">
+                                <a href="">
+                                    <img src="images/tmp/prod_01.jpg" alt="">
+                                </a>
+                                <div class="caption">
+                                    <h6><a href="#">天地合補高單位葡萄糖胺飲60ml</a></h6>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-amount">￥237</span>
+                                    <span class="product-original-price">
+                                        <s>￥237</s>
+                                    </span>
+                                    <p class="product-buy-num">已有66人購買</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- control button -->
+                <div class="carousel-indicators-inner">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                        <button class="btn btn-default btn-sm" name="">換一組</button>
+                    </ol>
+                </div>
+                <!-- /control button -->
+            </div>
+        </div>
+    </div>
+    <!-- /content -->
+    <!-- feature -->
+    <div class="row feature-item text-center">
+        <div class="col-xs-3">
+            <dl class="dl-horizontal">
+                <dt>
+                    <span class="text-circle-border">正</span>
+                </dt>
+                <dd>
+                    <h4>品質保證</h4><span>品質保證，購物無憂</span></dd>
+            </dl>
+        </div>
+        <div class="col-xs-3">
+            <dl class="dl-horizontal">
+                <dt>
+                    <span class="text-circle-border">正</span>
+                </dt>
+                <dd>
+                    <h4>品質保證</h4><span>品質保證，購物無憂</span></dd>
+            </dl>
+        </div>
+        <div class="col-xs-3">
+            <dl class="dl-horizontal">
+                <dt>
+                    <span class="text-circle-border">正</span>
+                </dt>
+                <dd>
+                    <h4>品質保證</h4><span>品質保證，購物無憂</span></dd>
+            </dl>
+        </div>
+        <div class="col-xs-3">
+            <dl class="dl-horizontal">
+                <dt>
+                    <span class="text-circle-border">正</span>
+                </dt>
+                <dd>
+                    <h4>品質保證</h4><span>品質保證，購物無憂</span></dd>
+            </dl>
+        </div>
+    </div>
+    <!-- /feature -->
+    <!-- footer -->
+    <footer>
+        <hr class="center-block">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1 footer-top-logo">
+                        <img src="images/logo/logo-tebuy-02.png">
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 text-center">
+                        <div class="footer-newsletter">
+                            <img src="images/qrocode/qrcode-tebuy-01.png">
+                            <h4 class="footer-top-title">官方微信</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area text-center">
+            <div class="">
+                <div class="row">
+                    <ul class="list-inline">
+                        <li><a href="">About Tebuy</a> | </li>
+                        <li><a href="">About Tebuy</a> | </li>
+                        <li><a href="">About Tebuy</a> | </li>
+                        <li><a href="">About Tebuy</a> | </li>
+                        <li><a href="">About Tebuy</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline">
+                        <li><a href="">友情連接：</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="copyright">
+                        <ul class="list-inline">
+                            <li><a href="">备案号:苏ICP备15052948号 | </a></li>
+                            <li><a href="">Copyright© 2015-2016 TW-MALL.CN All Rights Reserved</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </footer>
+    <!-- /footer -->
+    <!-- checkout bottom -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom no-border">
+        <div class="row cart-checkout-box">
+            <div class="col-xs-3 cart-checkout-item">
+                <span class="padding-10">
+                            <label>
+                                <input type="checkbox"> 全選
+                            </label>
+                            刪除選中商品
+                        </span>
+            </div>
+            <div class="col-xs-9 cart-checkout-item text-right no-padding">
+                <span class="text-primary">繼續選購</span> 總金額(含關稅，不含運費):
+                <span class="product-amount">￥164.29</span>
+                <button type="button" class="btn btn-pink-fill btn-lg">去結算</button>
+            </div>
+        </div>
+    </nav>
+    <!-- /checkout bottom -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+// border
+
+@mixin border-bottom($width, $style, $color) {
+    border-bottom: $width $style $color;
+}

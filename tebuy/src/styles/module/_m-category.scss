@@ -1,0 +1,49 @@
+// == category
+// -------------------------
+//
+
+.category {
+    color: #999999;
+    .well {
+        padding: 0;
+    }
+    .row {
+        border-bottom: 1px solid $white;
+        .list-title {
+            text-align: center;
+            padding: 10px;
+        }
+        .list-con {
+            background: $white;
+            li {
+                padding: 10px;
+                > a {
+                    &:hover {
+                        color: $watermelon;
+                        text-decoration: none;
+                    }
+                    &.active {
+                        color: $watermelon;
+                    }
+                }
+            }
+        }
+    }
+    .more {
+        margin-top: -1px;
+        padding: 20px;
+        background: $white;
+        color: $watermelon;
+        border: 1px solid #e3e3e3;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+}
+
+.category-header {
+    .title {
+        padding-right: 20px;
+        padding-left: 10px;
+        font-size: 26px;
+        color: $watermelon;
+    }
+}

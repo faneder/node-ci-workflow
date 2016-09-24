@@ -1,0 +1,68 @@
+// == Carousel
+// -------------------------
+//
+// box
+.carousel {
+    .carousel-right-border {
+        border-right: 1px solid #FFE2E2;
+    }
+}
+
+.carousel-box {
+    margin: 15px 0;
+}
+
+// control button
+.carousel-control {
+    top: 40%;
+    z-index: 999;
+    bottom: none;
+    text-align: center;
+    width: 35px;
+    &.left,
+    &.right {
+        background-image: none;
+    }
+    .glyphicon {
+        top: 40%;
+    }
+}
+
+.carousel-indicators {
+    li {
+        background-color: $gray-light;
+        @include size(12px, 12px)
+    }
+    .active {
+        background-color: $watermelon;
+        @include size(14px, 14px)
+    }
+}
+
+.carousel-indicators-inner {
+    margin-top: 60px;
+}
+
+%carousel-control-oval-pink-btn {
+    @include button-variant($white, #FFE4E4, #FFE4E4);
+    padding: 30px 15px;
+}
+
+.btn-carousel-left {
+    @extend %carousel-control-oval-pink-btn;
+    @include border-right-radius($border-radius-large);
+}
+
+.btn-carousel-right {
+    @extend %carousel-control-oval-pink-btn;
+    @include border-left-radius($border-radius-large);
+}
+
+.btn-carousel-circle {
+    @extend .btn-circle;
+    border: 3px solid $white;
+    background: transparent;
+    > .glyphicon-chevron-right {
+        padding-left: 10px;
+    }
+}

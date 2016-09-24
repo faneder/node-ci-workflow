@@ -1,0 +1,122 @@
+// == type
+// -------------------------
+//
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.padding-50 {
+    padding: 50px;
+}
+
+.letter-spacing-3 {
+    letter-spacing: $letter-spacing-base;
+}
+
+.text-shadow-default {
+    @include text-shadow(absolute, $white, $gray-darker, 0.1em 0.1em 0.2em);
+}
+
+.article-text {
+    letter-spacing: $article-letter-spacing;
+    line-height: $line-height;
+}
+
+.display-table {
+    display: table;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+
+/*
+ *-----------------------
+ * list
+ *-----------------------
+ */
+
+.list-item {
+    padding: 0 10px;
+    &.active {
+        color: $watermelon;
+    }
+}
+
+.list-item-border {
+    border-right: 1px solid $gray-light;
+    &:last-child {
+        @extend .no-border;
+    }
+}
+
+.tags {
+    color: $watermelon;
+}
+
+
+/*
+ *-----------------------
+ * title
+ *-----------------------
+ */
+
+.title-bottom {
+    border-bottom: 1px solid $gray-lighter;
+    padding: 10px 10px;
+}
+
+
+/*
+ *-----------------------
+ * icon
+ *-----------------------
+ */
+
+.text-circle-border {
+    padding: 5px 10px;
+    @include size(400px, 400px);
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid $watermelon;
+    color: $watermelon;
+}
+
+
+/*
+ *-----------------------
+ * text
+ *-----------------------
+ */
+
+@include text-emphasis-variant('.text-scarlet', $red-scarlet);
+@include text-emphasis-variant('.text-white', $white);
+@include text-emphasis-variant('.text-gray-dark', $gray-dark);
+@include text-emphasis-variant('.text-watermelon', $watermelon);
+
+/*
+ *-----------------------
+ * bg
+ *-----------------------
+ */
+
+@include bg-variant('.bg-white', $white);
+@include bg-variant('.bg-gray-lighter', $gray-lighter);
+@include bg-variant('.bg-gray-light', $gray-light);
+@include bg-variant('.brand-pink', $brand-pink);

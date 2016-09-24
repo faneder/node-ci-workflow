@@ -1,0 +1,37 @@
+// state
+// -------------------------
+// Give the javascript states
+// triangle bottom state
+.is-active-triangle-bottom {
+    bottom: 0;
+    -webkit-box-shadow: 0 1px 2px 0 #717171;
+    li.active > a {
+        &:before,
+        &:after {
+            margin-left: -10px;
+        }
+        &:before {
+            @include triangle-top(10px, lighten($gray-light, 30%), absolute);
+            bottom: -1px;
+        }
+        &:after {
+            @include triangle-top(10px, $body-bg, absolute);
+            bottom: -5px;
+        }
+    }
+}
+
+.is-disabled-login {
+    background: $gray-light;
+    color: $white;
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            background: $gray-light;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+//
+// Typography
+// --------------------------------------------------
+// Alignment
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin text-shadow ($position, $font-color, $shadow-color, $shadow) {
+    position: $position;
+    text-shadow: $shadow-color $shadow;
+    color: $font-color
+}
+
+@mixin floor-title-color ($color) {
+	.title, small {
+        color: $color;
+    }
+}

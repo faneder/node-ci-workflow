@@ -1,0 +1,35 @@
+// == brand
+// -------------------------
+//
+
+.brand-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+}
+
+.brand-introduce {
+    .brand-title {
+        padding-left: 20px;
+    }
+}
+
+.brand-group-item {
+    width: 33%;
+    height: 150px;
+    text-align: center;
+    img {
+	    margin-top: 20px;
+    }
+	.img-box {
+    	height: 100px;
+	}
+    .title {
+    	margin-top: 20px;
+    	font-size: 15px;
+    }
+    &:nth-child(odd) {
+		background: $gray-lighter;
+    }
+}

@@ -1,0 +1,34 @@
+
+# circle.yml
+machine:
+  # 安裝 eb 需要 python
+  python:
+    version: 2.7
+  # 環境改成 docker
+  services:
+    - docker
+
+dependencies:
+  pre:
+    # 安裝 eb
+    - pip install awsebcli --upgrade --ignore-installed six
+    #- sudo pip install awsebcli
+  override:
+    # 建構方式使用 docker build
+    - docker build -t hello-ci-workflow .
+
+test:
+  override:
+    #- ./node_modules/.bin/mocha
+    - npm test
+    # 使用 curl 測試 docker 是否有順利執行 node
+    - docker run -d -p 3000:3000 hello-ci-workflow; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:3000
+
+# 新增一筆部署腳本
+deployment:
+  production:
+    branch: master
+    commands:
+      - eb deploy env-production
+

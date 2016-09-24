@@ -1,0 +1,73 @@
+// == brand note
+// -------------------------
+//
+
+.baby-note {
+    padding: 20px;
+    > .baby-note-carousel {
+        padding: 50px;
+        .thumbnail {
+            @extend .text-white;
+            padding: 10px;
+            background: none;
+            border: 3px solid;
+        }
+        .carousel-content {
+            padding: 10px;
+        }
+        img {
+            box-shadow: 0px 2px 10px 2px $gray-light;
+        }
+        .pull-right {
+            color: $gray-light
+        }
+    }
+}
+
+.baby-note-body {
+    .img-responsive {
+        min-height: 375px;
+    }
+    .nav {
+        margin-top: 15px;
+        border-top: 1px solid $gray-lighter;
+    }
+}
+
+.footer-baby-note {
+    margin-top: -20px;
+    padding: 80px 0 20px 0;
+    background: $white;
+    color: $gray;
+    li > a {
+        color: $gray-light;
+    }
+}
+
+// baby_note_list.html
+.baby-note-grid {
+    min-height: 375px;
+    overflow: hidden;
+}
+
+.baby-note-details {
+    padding: 10px;
+}
+
+.baby-note-detail-tab {
+    margin: 10px;
+    > .pull-right {
+        line-height: 35px;
+    }
+}
+
+.baby_note_list_body {
+    margin-top: 50px;
+}
+
+.baby-note-grid-title {
+    border: 1px solid;
+    padding: 10px;
+    width: 100%;
+}
+

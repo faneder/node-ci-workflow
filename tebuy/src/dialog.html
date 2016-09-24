@@ -1,0 +1,1036 @@
+\
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>台汇淘台湾商品跨境直购 最流行的台湾商品限时特卖</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="台汇淘">
+    <meta name="copyright" CONTENT="本網頁著作權台貿全球所有">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../dist/styles/main.css">
+    <!-- lib -->
+    <!-- <link rel="stylesheet" href="../dist/styles/vendors.css"> -->
+    <!-- endinject -->
+</head>
+
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">欢迎来到台会淘！</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">请登入</a></li>
+                        <li><a href="#about">免费注册</a></li>
+                        <li>
+                            <a href="#contact"></a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的台汇淘<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../navbar/">我的购物车 <span class="text-danger">0</span></a></li>
+                        <li><a href="../navbar-static-top/">帮助中心</a></li>
+                        <li><a href="./">消息<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="./">手机版<span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+    <div class="page-header">
+        <div class="container">
+            <div class="col-xs-7">
+                <img class="page-header-logo" src="images/logo/tebuy_logo_01.png">
+            </div>
+            <div class="col-xs-5">
+                <!-- search box -->
+                <div class="input-group search-mall">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="glyphicon glyphicon-search btn" type="button"></button>
+                    </span>
+                </div>
+                <div class="search-tags">
+                    <a href="#" class="btn btn-default" role="button">保養</a>
+                    <a href="#" class="btn btn-default" role="button">保養</a>
+                    <a href="#" class="btn btn-default" role="button">保養</a>
+                </div>
+                <!-- /input-group -->
+            </div>
+        </div>
+        <!-- <h1>Sticky footer with fixed navbar</h1> -->
+    </div>
+    <div class="container dialog">
+        <!-- =retrieve -->
+        <div class="well">
+            <h2>Retrieve password</h2>
+            <!-- login verify code -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login-retrieve-psd">Retrieve password</button>
+            <!-- login enter password -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login-retrieve-psd-2">login retrieve password enter new password</button>
+            <!-- login success -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login-retrieve-psd-3">login retrieve password success</button>
+        </div>
+        <!-- =login -->
+        <div class="well">
+            <h2>login</h2>
+            <!-- login verify code -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">login</button>
+            <!-- login enter password -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login-error">login error</button>
+            <!-- login success -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login-now">login now</button>
+            <!-- login error over three times  -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login-error-more">login error over three times</button>
+        </div>
+        <!-- =register -->
+        <div class="well">
+            <h2>register</h2>
+            <!-- login verify code -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#register-verify-code">register flow 1</button>
+            <!-- login enter password -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#register-enter-pwd">register flow 2</button>
+            <!-- login success -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#register-success">register flow 1</button>
+        </div>
+        <!-- login retrieve psd -->
+        <div id="login-retrieve-psd" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">找回密碼</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>登入</li>
+                            <li>註冊</li>
+                            <li>幫助中心</li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row login-flow text-center">
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正<span></p>
+                                    <p>1.驗證身份.......</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p><span class="text-circle-border">正</span></p>
+                                <p>2.設置密碼.......</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正</span></p>
+                                <p>3.完成</p>
+                            </div>
+                        </div>
+                        <div class="row login-body">
+                            <form>
+                                <div class="form-group form-inline">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="手机号碼/郵箱/用戶名">
+                                    </div>
+                                    <button type="button" class="btn get-verification-code">獲取驗證碼</button>
+                                    <button type="button" class="btn get-verification-code disabled">已發送 54</button>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="輸入驗證碼">
+                                    </div>
+                                    <div class="alert alert-black hide" role="alert">
+                                        驗證碼錯誤
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                            </form>
+                            <br>
+                            <button type="button" class="btn btn-pink-fill btn-lg btn-block">下一步</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login retrieve fill new psd -->
+        <div id="login-retrieve-psd-2" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">找回密碼</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>登入</li>
+                            <li>註冊</li>
+                            <li>幫助中心</li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row login-flow text-center">
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正<span></p>
+                                    <p>1.驗證身份.......</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p><span class="text-circle-border">正</span></p>
+                                <p>2.設置密碼.......</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正</span></p>
+                                <p>3.完成</p>
+                            </div>
+                        </div>
+                        <div class="row login-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="密碼由6-20個數字和字母組成/郵箱/用戶名">
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                            <button type="button" class="btn btn-pink-fill btn-lg btn-block">下一步</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login success -->
+        <div id="login-retrieve-psd-3" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">找回密碼</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>登入</li>
+                            <li>註冊</li>
+                            <li>幫助中心</li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row login-flow text-center">
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正<span></p>
+                                <p>1.驗證身份.......</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正</span></p>
+                                <p>2.設置密碼.......</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正</span></p>
+                                <p>3.完成</p>
+                            </div>
+                        </div>
+                        <div class="login-body text-center">
+                            <p class="letter-spacing-3">
+                                您已成功註冊，並獲得<span class="text-watermelon">5元購物金。</span>
+                            </p>
+                            <br>
+                            <button type="button" class="btn btn-default btn-lg btn-block">查看購物金</button>
+                            <button type="button" class="btn btn-pink btn-lg btn-block">去逛逛吧</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login content -->
+        <div id="login" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">歡迎登錄</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>沒有帳號？</li>
+                            <li><strong>免費註冊</strong></li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row login-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="手机号碼/郵箱/用戶名">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="登入密碼">
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                                <p>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> 2週內自動登入
+                                        </label> <span class="pull-right"><strong>忘記密碼？</strong></span>
+                                    </div>
+                                </p>
+                            </form>
+                            <br>
+                            <button type="button" class="btn btn-pink-fill btn-lg btn-block">登入</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="login-error" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">歡迎登錄</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>沒有帳號？</li>
+                            <li><strong>免費註冊</strong></li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row login-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="手机号碼/郵箱/用戶名">
+                                    </div>
+                                </div>
+                                <div class="alert alert-black" role="alert">
+                                    輸入的帳號/密碼不正確，請重新輸入
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" pclaceholder="登入密碼">
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                                <p>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> 2週內自動登入
+                                        </label> <span class="pull-right"><strong>忘記密碼？</strong></span>
+                                    </div>
+                                </p>
+                            </form>
+                            <br>
+                            <button type="button" class="btn btn-pink-fill btn-lg btn-block">登入</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="login-now" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">歡迎登錄</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>沒有帳號？</li>
+                            <li><strong>免費註冊</strong></li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="手机号碼/郵箱/用戶名">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="登入密碼">
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                                <p>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> 2週內自動登入
+                                        </label><span class="pull-right"><strong>忘記密碼？</strong></span>
+                                    </div>
+                                </p>
+                            </form>
+                            <br>
+                            <button type="button" class="btn btn-default btn-lg btn-block is-disabled-login" disabled>登入</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="login-error-more" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">歡迎登錄</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>沒有帳號？</li>
+                            <li><strong>免費註冊</strong></li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="手机号碼/郵箱/用戶名">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="登入密碼">
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                                <div class="form-group form-inline">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="輸入驗證碼">
+                                    </div>
+                                    <img src="images/tmp/tmp-validate-code.png"> 看不清楚？
+                                    <strong>換一個</strong>
+                                    <!-- /input-group -->
+                                    <div class="alert alert-black" role="alert">
+                                        驗證碼錯誤
+                                    </div>
+                                </div>
+                                <p>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> 2週內自動登入
+                                        </label> <span class="pull-right"><strong>忘記密碼？</strong></span>
+                                    </div>
+                                </p>
+                            </form>
+                            <br>
+                            <button type="button" class="btn btn-pink-fill btn-lg btn-block">登入</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login verify code content -->
+        <div id="register-verify-code" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">歡迎註冊</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>已有帳號？</li>
+                            <li><strong>立即登錄</strong></li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row login-flow text-center">
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正<span></p>
+                            <p>1.驗證身份.......</p>
+                        </div>
+                        <div class="col-xs-4">
+                            <p><span class="text-circle-border">正</span></p>
+                                <p>2.設置密碼.......</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正</span></p>
+                                <p>3.完成</p>
+                            </div>
+                        </div>
+                        <div class="row login-body">
+                            <form>
+                                <div class="form-group form-inline">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="手机号碼/郵箱/用戶名">
+                                    </div>
+                                    <button type="button" class="btn get-verification-code">獲取驗證碼</button>
+                                    <button type="button" class="btn get-verification-code disabled">已發送 54</button>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="輸入驗證碼">
+                                    </div>
+                                    <div class="alert alert-black" role="alert">
+                                        驗證碼錯誤
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                            </form>
+                            <br>
+                            <p>注册即同意<span class="text-watermelon">台汇淘服务条款</span></p>
+                            <button type="button" class="btn btn-pink-fill btn-lg btn-block">下一步</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login enter password -->
+        <div id="register-enter-pwd" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">歡迎註冊</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>已有帳號？</li>
+                            <li><strong>立即登錄</strong></li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row login-flow text-center">
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正<span></p>
+                                <p>1.驗證身份.......</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正</span></p>
+                                <p>2.設置密碼.......</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正</span></p>
+                                <p>3.完成</p>
+                            </div>
+                        </div>
+                        <div class="row login-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon2">i</span>
+                                        <input type="text" class="form-control" placeholder="密碼由6-20個數字和字母組成">
+                                    </div>
+                                    <!-- /input-group -->
+                                </div>
+                            </form>
+                            <br>
+                            <button type="button" class="btn btn-pink-fill btn-lg btn-block">完成</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login success -->
+        <div id="register-success" class="modal modal-1 fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close close-dialog" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">歡迎註冊</h2>
+                        <ul class="list-inline pull-right login-header-info">
+                            <li>已有帳號？</li>
+                            <li><strong>立即登錄</strong></li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row login-flow text-center">
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正<span></p>
+                                <p>1.驗證身份.......</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正</span></p>
+                                <p>2.設置密碼.......</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <p><span class="text-circle-border">正</span></p>
+                                <p>3.完成</p>
+                            </div>
+                        </div>
+                        <div class="login-body text-center">
+                            <p class="letter-spacing-3">
+                                您已成功註冊，並獲得<span class="text-watermelon">5元購物金。</span>
+                            </p>
+                            <br>
+                            <button type="button" class="btn btn-default btn-lg btn-block">查看購物金</button>
+                            <button type="button" class="btn btn-pink btn-lg btn-block">去逛逛吧</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="nav nav-menu text-center">
+            <li role="presentation" class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="glyphicon glyphicon-list"></i> 商品种类
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">美食飲品</a></li>
+                    <li><a href="#">品茗好茶</a></li>
+                    <li class="dropdown-submenu">
+                        <ul class="dropdown-menu">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <div class="row">
+                                        <div class="col-xs-2 list-title">美白系列</div>
+                                        <div class="col-xs-10 list-con">
+                                            <ul>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2 list-title">美白系列</div>
+                                        <div class="col-xs-10 list-con">
+                                            <ul>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2 list-title">美白系列</div>
+                                        <div class="col-xs-10 list-con">
+                                            <ul>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2 list-title">美白系列</div>
+                                        <div class="col-xs-10 list-con">
+                                            <ul>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2 list-title">美白系列</div>
+                                        <div class="col-xs-10 list-con">
+                                            <ul>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2 list-title">美白系列</div>
+                                        <div class="col-xs-10 list-con">
+                                            <ul>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-2 list-title">美白系列</div>
+                                        <div class="col-xs-10 list-con">
+                                            <ul>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                                <li><a href="#">美妝保養</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="list-con">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="images/logo/brand/logo-brand-01.png"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/logo/brand/logo-brand-02.png"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/logo/brand/logo-brand-03.png"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/logo/brand/logo-brand-04.png"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/logo/brand/logo-brand-05.png"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="images/logo/brand/logo-brand-06.png"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <a tabindex="-1" href="#">美妝保養</a>
+                    </li>
+                    <li><a href="#">保健食品</a></li>
+                    <li><a href="#">服飾配件</a></li>
+                    <li><a href="#">母嬰寶貝</a></li>
+                    <li><a href="#">生活居家</a></li>
+                    <li><a href="#">生活電器</a></li>
+                    <li><a href="#">寵物寶貝</a></li>
+                    <li><a href="#">文創精工</a></li>
+                </ul>
+            </li>
+            <li role="presentation">
+                <a href="#"><img src="">最新上架</a>
+            </li>
+            <li role="presentation"><a href="#">今日限定</a></li>
+            <li role="presentation"><a href="#">本周最火</a></li>
+            <li role="presentation"><a href="#">优惠卷领取</a></li>
+        </ul>
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="nav-menu-banner-wrap">
+            <div class="nav-menu-banner">
+                <img src="images/banner/banner-nav-1.jpg">
+            </div>
+        </div>
+        <!-- contain -->
+        <div class="row">
+            <!-- product -->
+            <div class="row product-grid">
+                <div class="col-xs-3">
+                    <div class="thumbnail product-item">
+                        <a href="">
+                            <img src="images/tmp/prod_01.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h4><a href="#">quaker桂格】敏儿ha米精致胚芽配方</a></h4>
+                            <!-- <p>description</p> -->
+                        </div>
+                        <div class="product-price">
+                            <span class="pull-right product-reduce">4.9折</span>
+                            <span class="product-amount">￥237</span>
+                            <span class="product-original-price">
+                                <small><s>￥237</s></small>
+                            </span>
+                        </div>
+                        <div class="product-ratings">
+                            <p class="pull-right">已有30人購買</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                        <div class="product-add-cart text-center">加入購物車</div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="thumbnail product-item">
+                        <a href="">
+                            <img src="images/tmp/prod_01.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h4><a href="#">quaker桂格】敏儿ha米精致胚芽配方</a></h4>
+                            <!-- <p>description</p> -->
+                        </div>
+                        <div class="product-price">
+                            <span class="pull-right product-reduce">4.9折</span>
+                            <span class="product-amount">￥237</span>
+                            <span class="product-original-price">
+                                <small><s>￥237</s></small>
+                            </span>
+                        </div>
+                        <div class="product-ratings">
+                            <p class="pull-right">已有30人購買</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                        <div class="product-add-cart text-center">加入購物車</div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="thumbnail product-item">
+                        <a href="">
+                            <img src="images/tmp/prod_01.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h4><a href="#">quaker桂格】敏儿ha米精致胚芽配方</a></h4>
+                            <!-- <p>description</p> -->
+                        </div>
+                        <div class="product-price">
+                            <span class="pull-right product-reduce">4.9折</span>
+                            <span class="product-amount">￥237</span>
+                            <span class="product-original-price">
+                                <small><s>￥237</s></small>
+                            </span>
+                        </div>
+                        <div class="product-ratings">
+                            <p class="pull-right">已有30人購買</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                        <div class="product-add-cart text-center">加入購物車</div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="thumbnail product-item">
+                        <a href="">
+                            <img src="images/tmp/prod_01.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h4><a href="#">quaker桂格】敏儿ha米精致胚芽配方</a></h4>
+                            <!-- <p>description</p> -->
+                        </div>
+                        <div class="product-price">
+                            <span class="pull-right product-reduce">4.9折</span>
+                            <span class="product-amount">￥237</span>
+                            <span class="product-original-price">
+                                <small><s>￥237</s></small>
+                            </span>
+                        </div>
+                        <div class="product-ratings">
+                            <p class="pull-right">已有30人購買</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                        <div class="product-add-cart text-center">加入購物車</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row feature-item text-center">
+            <div class="col-xs-3">
+                <div>
+                    <span class="text-circle-border">正</span>
+                </div>
+                <dl>
+                    <dt>品質保證</dt>
+                    <dd>品質保證，購物無憂</dd>
+                </dl>
+            </div>
+            <div class="col-xs-3">
+                <span class="text-circle-border">正</span>
+                <dl>
+                    <dt>品質保證</dt>
+                    <dd>品質保證，購物無憂</dd>
+                </dl>
+            </div>
+            <div class="col-xs-3">
+                <span class="text-circle-border">正</span>
+                <dl>
+                    <dt>品質保證</dt>
+                    <dd>品質保證，購物無憂</dd>
+                </dl>
+            </div>
+            <div class="col-xs-3">
+                <span class="text-circle-border">正</span>
+                <dl>
+                    <dt>品質保證</dt>
+                    <dd>品質保證，購物無憂</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1 footer-top-logo">
+                        <img src="images/logo/logo-tebuy-02.png">
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="footer-menu">
+                            <h4 class="footer-top-title">品質保證</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                                <li><a href="">海外直郵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 text-center">
+                        <div class="footer-newsletter">
+                            <img src="images/qrocode/qrcode-tebuy-01.png">
+                            <h4 class="footer-top-title">官方微信</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area text-center ">
+            <div class="">
+                <div class="row">
+                    <ul class="list-inline">
+                        <li><a href="">About Tebuy</a> | </li>
+                        <li><a href="">About Tebuy</a> | </li>
+                        <li><a href="">About Tebuy</a> | </li>
+                        <li><a href="">About Tebuy</a> | </li>
+                        <li><a href="">About Tebuy</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline">
+                        <li><a href="">友情連接：</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                        <li><a href="">阿里巴巴</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="copyright">
+                        <ul class="list-inline">
+                            <li><a href="">备案号:苏ICP备15052948号 | </a></li>
+                            <li><a href="">Copyright© 2015-2016 TW-MALL.CN All Rights Reserved</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </footer>
+    <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script> -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+
+</html>
