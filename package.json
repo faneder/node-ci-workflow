@@ -1,7 +1,7 @@
 {
   "name": "node-ci-workflow",
   "version": "1.0.0",
-  "description": "",
+  "description": "portfolio",
   "main": "index.js",
   "directories": {
     "test": "test"
