@@ -1,11 +1,7 @@
-// index.js
 var express = require('express');
-var app = express();
+var app     = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello env-production! success~~~~~~~~~');
-});
-
+app.use('/', express.static(__dirname + '/eder_portfolio'));
 app.use('/tebuy', express.static(__dirname + '/tebuy'));
 
 app.use(function(req, res, next) {
@@ -14,7 +10,6 @@ app.use(function(req, res, next) {
 });
 
 var server = app.listen(3000, function () {
-
   var host = server.address().address;
   var port = server.address().port;
 
