@@ -1,0 +1,43 @@
+// Variables
+
+$brand-primary: #337ab7;
+$brand-danger: #e74c3c;
+$gray-darkest: #222;
+$placeholder-text: #bbbbbb;
+
+$white-base: #FFF;
+
+$gray-base:        #000;
+$gray-darker:      lighten($gray-base, 13.5%); // #222
+$gray-dark:        lighten($gray-base, 20%);   // #333
+$gray:             lighten($gray-base, 33.5%); // #555
+$gray-light:       lighten($gray-base, 46.7%); // #777
+$gray-lighter:     lighten($gray-base, 93.5%); // #eee
+// $gray: #777;
+// $gray-lighter: #f7f7f7;
+
+$nav-bottom-color: #434346;
+$heart-color: #fb1b04;
+
+// font
+$font-size-base: 15px;
+
+$black: #000000;
+$white: #fff;
+$body-bg: #ecdaab;
+$base-bg: #e4bba7;
+$head-bg: $base-bg;
+$hair-bg: #2b271b;
+$eyebrow-bg: #532913;
+$eye-bg: #311e0f;
+$mouth-bg: #d68678;
+$glasses-bg: rgba(189, 147, 100, 0.5);
+$jacket-bg: #000;
+$glasses-thickness: 1px;
+$glasses-color: #000;
+
+$hair-height: 100%;
+$hair-width: 100%;
+$portrait-height: 40vh;
+$portrait-width: 40vh * 2 / 3;
+$base-shadow-color: rgba(152, 80, 55, 0.3);
