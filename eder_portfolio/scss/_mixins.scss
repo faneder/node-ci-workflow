@@ -1,0 +1,109 @@
+// Bootstrap Button Variant
+
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  @at-root {
+    &.active,
+    &:active,
+    &:focus,
+    &:hover,
+    .open .dropdown-toggle#{&} {
+      color: $color;
+      background-color: darken($background, 10%);
+      border-color: darken($border, 12%);
+    }
+
+    &.active,
+    &:active,
+    .open .dropdown-toggle#{&} {
+      background-image: none;
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] #{&} {
+      &,
+      &.active,
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $background;
+        border-color: $border;
+      }
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+// Background Features
+
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+// Font Selections
+
+@mixin serif-font {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin script-font {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+@mixin body-font {
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin heading-font {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin hair-pattern($deg, $color) {
+  background-color: $color;
+  background-image: linear-gradient($deg, fade($color, 50%) 50%, transparent 50%), linear-gradient($deg, fade(darken($color, 20%), 10%) 50%, transparent 50%), linear-gradient($deg, transparent 50%, fade(lighten($color, 10%), 5%) 50%), linear-gradient($deg, transparent 50%, fade(darken($color, 50%), 50%) 50%);
+  background-size: 2%, 5%, 8%, 3%;
+}
+
