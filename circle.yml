@@ -30,5 +30,6 @@ deployment:
   production:
     branch: master
     commands:
+      - eb init
       - eb deploy env-production
 
