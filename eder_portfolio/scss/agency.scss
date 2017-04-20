@@ -194,20 +194,19 @@ h6 {
 }
 
 header {
-    // background-image: url('../img/header.jpg');
     background-image: url('../img/header-bg.jpg');
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
+    height: 100vh;
     @include background-cover;
     text-align: center;
     color: white;
     .intro-text {
-        padding-top: 100px;
+        padding-top: 170px;
         padding-bottom: 50px;
         .intro-lead-in {
             @include serif-font;
-            // font-style: italic;
             font-size: 22px;
             line-height: 20px;
             // margin-top: 15px;
